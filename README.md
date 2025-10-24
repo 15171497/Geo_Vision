@@ -1,5 +1,5 @@
 # GeoVision — Remote Sensing Foundation + Finetuning Suite
-
+希望大家给我点个star哦
 > 预训练 MAE + ViT/RVSA 骨干，支持分类 / 语义分割 / 变化检测微调与推理。  
 > 已修复并增强：`pos_embed` 尺寸不匹配、`attn_mask` 兼容、忽略像素（255/0）、输出尺寸自动对齐、健壮的 ViT token 提取、批量验证集推理（含彩色可视化）、逐类 mIoU 评估。
 
