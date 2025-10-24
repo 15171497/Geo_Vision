@@ -25,7 +25,8 @@
 ---
 
 ## 🗂️ 目录结构（核心）
-
+完整的训练好的模型（预训练，微调），在百度网盘中：通过网盘分享的文件：GeoVista
+链接: https://pan.baidu.com/s/1QN91AfpJSV1jPxLLkRrPFg?pwd=em2t 提取码: em2t
 ```
 rs_rvsa_plus/
   backbones/
