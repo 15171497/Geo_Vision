@@ -1,7 +1,7 @@
 # GeoVision — Remote Sensing Foundation + Finetuning Suite
-希望大家给我点个star哦
+希望大家给我点个star哦，如果有问题，可联系我lyb2455716@163.com。
 > 预训练 MAE + ViT/RVSA 骨干，支持分类 / 语义分割 / 变化检测微调与推理。  
-> 已修复并增强：`pos_embed` 尺寸不匹配、`attn_mask` 兼容、忽略像素（255/0）、输出尺寸自动对齐、健壮的 ViT token 提取、批量验证集推理（含彩色可视化）、逐类 mIoU 评估。
+> 输出尺寸自动对齐、健壮的 ViT token 提取、批量验证集推理（含彩色可视化）、逐类 mIoU 评估。
 
 ---
 
@@ -41,8 +41,8 @@ rs_rvsa_plus/
     datasets.py              # 递归图像收集、分割/变化检测数据集
   train/
     pretrain_mae.py          # MAE 预训练
-    finetune_cls.py          # 分类微调（attn_mask 安全）
-    finetune_seg.py          # 分割微调（健壮 token 提取 + 尺寸对齐 + ignore_index + mIoU）
+    finetune_cls.py          # 分类微调
+    finetune_seg.py          # 分割微调
     finetune_cd.py           # 变化检测微调
   infer/
     infer_seg.py             # 单图分割推理（已对齐训练逻辑）
@@ -261,6 +261,5 @@ outputs_seg_val_vis/
 
 ## 📜 许可与致谢
 
-- 如果需要学习交流，或者想要数据集或者训练好的模型，可以联系lyb2455716@163.com。
 - Backbone/MAE 参考原始 RVSA/ViT/MAE 实现，保留其核心设计与接口；  
 - 工作版权归本人所有。
